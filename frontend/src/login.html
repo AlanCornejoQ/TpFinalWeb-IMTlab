@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Iniciar sesión</title>
+    <link rel="stylesheet" href="../css/estilos.css" />
+</head>
+<body>
+    <header>Sistema de Préstamos</header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="componentes.html">Componentes</a></li>
+            <li><a href="prestamos.html">Préstamos</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
+            <li><a href="horarios.html">Horarios</a></li>
+        </ul>
+    </nav>
+    <main class="main-login">
+        <section class="form-login">
+            <h2>Iniciar Sesión</h2>
+            <form id="form-login" action="">
+                <div class="form-group">
+                    <label for="usuario">Usuario</label>
+                    <input type="text"  id="usuario" required/>
+                </div>
+                <div class="form-group">
+                    <label for="clave">Contraseña:</label>
+                    <input type="password" id="clave" required /> 
+                </div>
+                <button type="submit">Ingresar</button>
+            </form>
+            <p id="mensaje-error" style="color: red; display: none;">Usuario o contraseña incorrectos</p>
+
+        </section>
+
+    </main>
+</body>
+</html>
