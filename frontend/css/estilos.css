@@ -100,19 +100,19 @@ footer {
 }
 
 /* ==== COMPONENTES ==== */
-.grid-componentes{
+.grid-componentes {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
     gap: 1.5rem;
     margin-top: 1rem;
-}
+  }
 .card-componente {
     border: 1px solid #ccc;
     border-radius: 8px;
     padding: 1rem;
     background-color: white;
     box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
- }
+}
 .card-componente h3 {
     margin-bottom: 0.5rem;
     color: #05668D;
@@ -128,9 +128,15 @@ footer {
     color: white;
     border-radius: 4px;
     cursor: pointer;
+    transition: background 0.3s;
 }
 .card-componente button:hover {
     background-color: #034c6e;
+}
+.card-componente button:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
 }
 /* ==== PRESTAMOS ==== */
 .tabla-prestamos {
