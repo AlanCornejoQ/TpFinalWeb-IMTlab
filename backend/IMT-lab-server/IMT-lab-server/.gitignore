@@ -1,0 +1,53 @@
+# Ignore Visual Studio specific files
+.vs/
+*.user
+*.suo
+*.ntvs*
+*.njsproj
+*.sln.docstates
+
+# Ignore build output
+bin/
+obj/
+out/
+Debug/
+Release/
+
+# Ignore packages
+*.nupkg
+*.snupkg
+packages/
+
+# Ignore user-specific files
+*.env
+*.config
+*.local.settings.json
+
+# Ignore logs and database files
+*.log
+*.tlog
+*.cache
+*.db
+
+# Ignore Rider project files
+.idea/
+
+# Ignore test coverage and analysis files
+coverage/
+TestResults/
+
+# Ignore Docker and deployment files
+*.dockerignore
+Dockerfile
+
+# Ignore secrets and credentials
+secrets.json
+appsettings.*.json
+
+# Ignore Node.js dependencies (if using with Blazor/Web API)
+node_modules/
+yarn.lock
+package-lock.json
+
+# Ignore Python virtual environments (if used)
+venv/
