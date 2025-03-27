@@ -275,3 +275,5 @@ ehthumbs_vista.db
 *.lnk
 
 # End of https://www.toptal.com/developers/gitignore/api/node,visualstudiocode,windows,linux,react,ionic3,angular
+backend/IMT-lab-server/IMT-lab-server/bin/
+backend/IMT-lab-server/IMT-lab-server/obj/
