@@ -6,13 +6,20 @@
   </div>
 </main>
 
-<ul>
-  <li *ngFor="let componente of componentes">
-    {{ componente.name }}
-    {{ componente.description }}
-    <!-- Asumiendo que cada item tiene una propiedad 'name' -->
-  </li>
-</ul>
+<table>
+  <thead>
+    <tr>
+      <th>Componente</th>
+      <th>Descripción</th>
+    </tr>
+  </thead>
+  <tbody *ngIf="componentes$ | async as componentes">
+    <tr *ngFor="let componente of componentes">
+      <td>{{ componente.name }}</td>
+      <td>{{ componente.description }}</td>
+    </tr>
+  </tbody>
+</table>
 <!-- MODAL -->
 <!-- <div id="modal-prestamo" class="modal">
   <div class="modal-contenido">

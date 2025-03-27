@@ -1,13 +1,13 @@
 <div class="container">
   <h2>Agregar Componente</h2>
-  <form [formGroup]="componenteForm" (ngSubmit)="agregarComponente()">
+  <form [formGroup]="componenteForm">
     <div>
-      <label for="nombre">Nombre:</label>
-      <input id="nombre" type="text" formControlName="nombre" />
+      <label for="name">Nombre:</label>
+      <input id="name" type="text" formControlName="name" />
       <div
         *ngIf="
-          componenteForm.controls['nombre'].invalid &&
-          componenteForm.controls['nombre'].touched
+          componenteForm.controls['name'].invalid &&
+          componenteForm.controls['name'].touched
         "
       >
         <small *ngIf="componenteForm.controls['nombre'].hasError('required')"
@@ -17,21 +17,21 @@
     </div>
 
     <div>
-      <label for="descripcion">Descripción:</label>
-      <textarea id="descripcion" formControlName="descripcion"></textarea>
+      <label for="description">Descripción:</label>
+      <textarea id="description" formControlName="description"></textarea>
       <div
         *ngIf="
-          componenteForm.controls['descripcion'].invalid &&
-          componenteForm.controls['descripcion'].touched
+          componenteForm.controls['description'].invalid &&
+          componenteForm.controls['description'].touched
         "
       >
         <small
-          *ngIf="componenteForm.controls['descripcion'].hasError('required')"
+          *ngIf="componenteForm.controls['description'].hasError('required')"
           >La descripción es obligatoria.</small
         >
       </div>
     </div>
 
-    <button type="submit" [disabled]="componenteForm.invalid">Agregar</button>
+    <button type="submit" (click)="agregarComponente()">Agregar</button>
   </form>
 </div>

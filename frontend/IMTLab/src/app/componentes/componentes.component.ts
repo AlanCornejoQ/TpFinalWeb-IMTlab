@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
+import { Observable } from 'rxjs';
 import { Componente } from '../Models/component.model';
 import { ComponentesService } from '../services/componentes.service';
 
@@ -10,16 +11,15 @@ import { ComponentesService } from '../services/componentes.service';
   styleUrl: './componentes.component.css',
 })
 export class ComponentesComponent implements OnInit {
-  componentes: Componente[] = [];
+  componentes$: Observable<Componente[]>;
   constructor(
     private componenteService: ComponentesService,
     private router: Router
   ) {}
 
   ngOnInit() {
-    this.componenteService.get().subscribe((x) => {
-      this.componentes = x;
-    });
+    this.componentes$ = this.componenteService.get();
+    this.componentes$.subscribe();
   }
 
   agregarComponente() {

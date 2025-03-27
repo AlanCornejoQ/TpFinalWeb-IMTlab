@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 import { Router } from '@angular/router';
+import { Componente } from '../Models/component.model';
 import { ComponentesService } from '../services/componentes.service';
 
 @Component({
@@ -18,16 +19,20 @@ export class EditarComponenteComponent {
     private router: Router
   ) {
     this.componenteForm = this.fb.group({
-      nombre: ['', [Validators.required]],
-      descripcion: ['', [Validators.required]],
+      name: ['', [Validators.required]],
+      description: ['', [Validators.required]],
     });
   }
 
   agregarComponente() {
     if (this.componenteForm.valid) {
-      this.componenteService.create(this.componenteForm.value);
+      const componente: Componente = Object.assign(
+        {},
+        this.componenteForm.value
+      );
+      this.componenteService.create(componente).subscribe();
       console.log(this.componenteForm.value);
-      //   this.router.navigate(['/componentes']);
+      this.router.navigate(['/componentes']);
     }
   }
 }
