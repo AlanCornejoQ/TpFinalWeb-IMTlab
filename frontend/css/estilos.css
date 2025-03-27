@@ -210,4 +210,28 @@ footer {
 }
 .modal-botones button:last-child {
     background-color: #ccc;
-  }
+}
+/* ==== HORARIOS ==== */
+.horario-section {
+    margin-bottom: 2rem;
+    padding: 1rem;
+    background-color: #fdfdfd;
+    border-radius: 8px;
+    box-shadow: 0 0 8px rgba(0,0,0,0.05);
+}
+.tabla-horarios {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+    background-color: white;
+}
+.tabla-horarios th,
+.tabla-horarios td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: center;
+}
+.tabla-horarios th {
+    background-color: #05668D;
+    color: white;
+}
