@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mis Préstamos</title>
+    <link rel="stylesheet" href="../css/estilos.css" />
+</head>
+<body>
+    <header>
+        <h1>Préstamos Activos</h1>
+    </header>
+    <nav>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="componentes.html">Componentes</a></li>
+            <li><a href="reportes.html">Reportes</a></li>
+            <li><a href="horarios.html">Horarios</a></li>
+            <li><a href="login.html" onclick="logout()">Cerrar sesión</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <h2>Artículos prestados</h2>
+            <table class="tabla-prestamos">
+                <thead>
+                    <tr>
+                        <th>Componente</th>
+                        <th>Fecha préstamo</th>
+                        <th>Fecha devolución</th>
+                        <th>Días restantes</th>
+                        <th>Estado</th>
+                    </tr>
+                </thead>
+                <tbody id="tabla-prestamos-body">
+                    <!--para el JS-->
+                </tbody>
+            </table>
+
+        </section>
+    </main>
+    <footer>
+        <p>© 2025 Universidad Católica Boliviana - Proyecto final de modulo </p>
+        <p>Desarrollado por: Alan Cornejo y Carlos Aguilar </p>
+    </footer>
+    <script src="../js/prestamos.js"></script>
+</body>
+</html>
