@@ -36,5 +36,19 @@ namespace IMT_lab_server.Controllers
             _context.Components.Remove(component);
             _context.SaveChanges();
         }
+
+        [HttpPut("{id}")]
+        public Component UpdateComponentAsync([FromBody] Component component, [FromRoute] int id)
+        {
+            var currentComponent = _context.Components.FirstOrDefault(c => c.Id == id);
+            if (currentComponent != null)
+            {
+                currentComponent.Name = component.Name;
+                currentComponent.Description = component.Description;
+            }
+            _context.Components.Update(currentComponent);
+            _context.SaveChanges();
+            return currentComponent;
+        }
     }
 }

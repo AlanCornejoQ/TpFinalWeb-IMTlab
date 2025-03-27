@@ -2,6 +2,7 @@
 using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 using ProjectA.Infrastructure.Data;
@@ -11,9 +12,11 @@ using ProjectA.Infrastructure.Data;
 namespace IMT_lab_server.Data.Migrations
 {
     [DbContext(typeof(IMTLabDbContext))]
-    partial class IMTLabDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250327202625_AddLoan")]
+    partial class AddLoan
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
