@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34316.72
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IMT-lab-server", "IMT-lab-server\IMT-lab-server.csproj", "{990D1247-1184-4541-8E3A-A42ACD7628E8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{990D1247-1184-4541-8E3A-A42ACD7628E8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{990D1247-1184-4541-8E3A-A42ACD7628E8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{990D1247-1184-4541-8E3A-A42ACD7628E8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{990D1247-1184-4541-8E3A-A42ACD7628E8}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {1E74E56E-3CE4-4373-A85A-36DEEE1835E6}
+	EndGlobalSection
+EndGlobal

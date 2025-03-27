@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\IMT-lab-server.props" />
+</Project>

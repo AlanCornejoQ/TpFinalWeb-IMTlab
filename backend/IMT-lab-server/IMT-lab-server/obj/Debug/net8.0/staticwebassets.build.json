@@ -1,0 +1,11 @@
+{
+  "Version": 1,
+  "Hash": "kAJ52E1RpPZ2nYNbmuCTLPQJemBoDBPl1tGPDdRko3s=",
+  "Source": "IMT-lab-server",
+  "BasePath": "_content/IMT-lab-server",
+  "Mode": "Default",
+  "ManifestType": "Build",
+  "ReferencedProjectsConfiguration": [],
+  "DiscoveryPatterns": [],
+  "Assets": []
+}

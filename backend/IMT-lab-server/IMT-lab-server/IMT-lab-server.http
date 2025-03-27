@@ -1,0 +1,6 @@
+@IMT_lab_server_HostAddress = http://localhost:5285
+
+GET {{IMT_lab_server_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
