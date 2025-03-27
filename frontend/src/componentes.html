@@ -28,6 +28,23 @@
             </div>
         </section>
     </main>
+    <!-- MODAL -->
+<div id="modal-prestamo" class="modal">
+    <div class="modal-contenido">
+      <h2>Registrar préstamo</h2>
+      <form id="form-prestamo">
+        <input type="hidden" id="componente-id" />
+        <label for="fecha-prestamo">Fecha de préstamo:</label>
+        <input type="date" id="fecha-prestamo" required />
+        <label for="fecha-devolucion">Fecha de devolución:</label>
+        <input type="date" id="fecha-devolucion" required />
+        <div class="modal-botones">
+          <button type="submit">Confirmar</button>
+          <button type="button" onclick="cerrarModal()">Cancelar</button>
+        </div>
+      </form>
+    </div>
+  </div>
     <footer>
         <p>© 2025 Universidad Católica Boliviana - Proyecto final de modulo </p>
         <p>Desarrollado por: Alan Cornejo y Carlos Aguilar </p>

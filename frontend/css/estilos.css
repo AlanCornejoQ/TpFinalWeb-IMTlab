@@ -160,3 +160,54 @@ footer {
 .tabla-prestamos tr:nth-child(even) {
     background-color: #f2f2f2;
 }
+/* ==== MODAL ==== */
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 10;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0,0,0,0.5);
+}
+.modal-contenido {
+    background-color: white;
+    margin: 10% auto;
+    padding: 2rem;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 8px;
+}
+.modal-contenido h2 {
+    margin-bottom: 1rem;
+    color: #05668D;
+}
+.modal-contenido label {
+    display: block;
+    margin-top: 1rem;
+}
+.modal-contenido input {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.25rem;
+}
+.modal-botones {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.5rem;
+}
+.modal-botones button {
+    padding: 0.5rem 1rem;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.modal-botones button:first-child {
+    background-color: #05668D;
+    color: white;
+}
+.modal-botones button:last-child {
+    background-color: #ccc;
+  }
