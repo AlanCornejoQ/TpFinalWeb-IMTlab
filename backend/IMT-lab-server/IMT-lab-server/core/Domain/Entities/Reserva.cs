@@ -7,7 +7,9 @@ namespace Core.Domain.Entities
         public Guid EspacioId { get; private set; }
         public DateTime FechaInicio { get; private set; }
         public DateTime FechaFin { get; private set; }
-
+        public string Estado { get; private set; } = "Activa";
+        public DateTime? FechaCancelacion { get; private set; }
+        
         public Reserva(Guid usuarioId, Guid espacioId, DateTime inicio, DateTime fin)
         {
             Id = Guid.NewGuid();
@@ -24,7 +26,11 @@ namespace Core.Domain.Entities
 
         public void Cancelar()
         {
-            // Aquí podrías lanzar un evento: new ReservaCancelada(this.Id);
+            if (FechaInicio <= DateTime.Now)
+                throw new InvalidOperationException("No se puede cancelar una reserva que ya ha comenzado.");
+
+            Estado = "Cancelada";
+            FechaCancelacion = DateTime.Now;
         }
     }
 }
